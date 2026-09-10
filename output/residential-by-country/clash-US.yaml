@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 MX 01 - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  server: 188.114.97.6
+  port: 443
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
+  servername: xstack.mahanfixe.workers.dev
   network: ws
   ws-opts:
-    path: /vless/
+    path: /xiron
     headers:
-      Host: ul-mexico1.09vpn.com
+      Host: xstack.mahanfixe.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 MX 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 MX 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

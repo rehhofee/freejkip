@@ -29,7 +29,7 @@ proxies:
   ws-opts:
     path: /d1000b16fe76
     headers:
-      Host: telegram-leviko_v2ray
+      Host: Telegram-Leviko_v2ray
 proxy-groups:
 - name: PROXIES
   type: select
