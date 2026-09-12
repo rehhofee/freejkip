@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+- name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.18.46.46
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.14.64
+  port: 443
+  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
