@@ -6,257 +6,64 @@ log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
   type: ss
-  server: 51.222.155.32
-  port: 5003
+  server: 51.222.200.165
+  port: 5000
   cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
   type: ss
   server: 51.222.12.127
   port: 445
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  type: vless
-  server: 188.114.97.7
-  port: 2083
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shy-fog-af06.alvlirm333.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-fog-af06.alvlirm333.workers.dev
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   type: ss
-  server: 51.222.136.236
-  port: 8882
+  server: 51.222.141.125
+  port: 445
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  password: zDNVedRFPQexG9v
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   type: ss
   server: 51.79.85.185
   port: 8118
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
-  type: vless
-  server: 104.21.46.14
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf-vless-4cf55824.aimall.fr
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
-  type: vless
-  server: 104.21.63.28
-  port: 443
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: youxuanku.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: youxuanku.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
-  type: vless
-  server: 172.67.130.144
-  port: 443
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-1bc8ab.sekiro-c18.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
-  type: vless
-  server: 104.25.3.165
-  port: 443
-  uuid: 737678dc-cc15-4643-85a4-ca9359df1aa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: patient-moon-c61f.ggfsa55.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: patient-moon-c61f.ggfsa55.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 184.107.106.68
-- name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
   type: ss
-  server: 51.222.107.43
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
-  type: vless
-  server: 172.67.173.138
-  port: 443
-  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: odd-disk-98c5.assassincreed4048.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: odd-disk-98c5.assassincreed4048.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
-  type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 21 - xiaohe
-  type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 22 - xiaohe
-  type: vless
-  server: 172.67.137.223
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 23 - xiaohe
-  type: ss
-  server: 51.222.200.165
-  port: 5000
+  server: 166.88.130.218
+  port: 7018
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: fbcec76953a2d173
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 24 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
   type: ss
   server: 51.79.49.116
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 25 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
   type: vless
   server: 184.107.106.68
   port: 443
@@ -265,49 +72,45 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 26 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
   type: ss
-  server: 51.79.64.198
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 27 - xiaohe
-  type: vless
-  server: 104.21.45.213
+  server: 149.22.95.183
   port: 443
-  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-541f9d.ezaccess1d3db24.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-541f9d.ezaccess1d3db24.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 28 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 29 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
   type: ss
   server: 51.222.155.113
   port: 5601
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 30 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bodyshine.help
+  network: ws
+  ws-opts:
+    path: /raccoonwsvless
+    headers:
+      Host: bodyshine.help
+- name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -319,14 +122,7 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 31 - xiaohe
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 32 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -336,113 +132,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 33 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 34 - xiaohe
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 35 - xiaohe
-  type: vless
-  server: 188.114.96.7
-  port: 8443
-  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 36 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 37 - xiaohe
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 38 - xiaohe
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 39 - xiaohe
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 40 - xiaohe
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 41 - xiaohe
-  type: vless
-  server: 172.67.222.62
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf-vless-4cf55824.aimall.fr
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 🇨🇦 加拿大 (Canada) 42 - xiaohe
-  type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 43 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -454,54 +144,14 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 44 - xiaohe
-  type: vless
-  server: 188.114.96.3
-  port: 2087
-  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Ez-98919A.MOtoRicb.Workers.DeV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
-    headers:
-      Host: ez-98919a.motoricb.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 45 - xiaohe
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 46 - xiaohe
-  type: vless
-  server: 104.21.46.14
+- name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  type: ss
+  server: 149.22.95.183
   port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf-vless-4cf55824.aimall.fr
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 🇨🇦 加拿大 (Canada) 47 - xiaohe
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 184.107.106.68
-- name: 🇨🇦 加拿大 (Canada) 48 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -534,36 +184,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 16 - xiaohe
   - 🇨🇦 加拿大 (Canada) 17 - xiaohe
   - 🇨🇦 加拿大 (Canada) 18 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 21 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 22 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 23 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 24 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 25 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 26 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 27 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 28 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 29 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 30 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 31 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 32 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 33 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 34 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 35 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 36 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 37 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 38 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 39 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 40 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 41 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 42 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 43 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 44 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 45 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 46 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 47 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 48 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -587,35 +207,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 16 - xiaohe
   - 🇨🇦 加拿大 (Canada) 17 - xiaohe
   - 🇨🇦 加拿大 (Canada) 18 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 21 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 22 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 23 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 24 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 25 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 26 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 27 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 28 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 29 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 30 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 31 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 32 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 33 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 34 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 35 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 36 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 37 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 38 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 39 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 40 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 41 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 42 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 43 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 44 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 45 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 46 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 47 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 48 - xiaohe
 rules:
 - MATCH,PROXIES
