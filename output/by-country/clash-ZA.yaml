@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaohe
   type: ss
-  server: 102.37.156.224
+  server: 20.87.3.84
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: w0Yff67jxd3zXY9g
   udp: true
 - name: 🇿🇦 ZA 02 - xiaohe
   type: ss
@@ -32,6 +32,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: w0Yff67jxd3zXY9g
   udp: true
+- name: 🇿🇦 ZA 05 - xiaohe
+  type: ss
+  server: 20.87.3.84
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: w0Yff67jxd3zXY9g
+  udp: true
+- name: 🇿🇦 ZA 06 - xiaohe
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +55,8 @@ proxy-groups:
   - 🇿🇦 ZA 02 - xiaohe
   - 🇿🇦 ZA 03 - xiaohe
   - 🇿🇦 ZA 04 - xiaohe
+  - 🇿🇦 ZA 05 - xiaohe
+  - 🇿🇦 ZA 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +66,7 @@ proxy-groups:
   - 🇿🇦 ZA 02 - xiaohe
   - 🇿🇦 ZA 03 - xiaohe
   - 🇿🇦 ZA 04 - xiaohe
+  - 🇿🇦 ZA 05 - xiaohe
+  - 🇿🇦 ZA 06 - xiaohe
 rules:
 - MATCH,PROXIES
