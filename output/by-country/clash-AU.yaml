@@ -18,40 +18,44 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   type: vless
-  server: 34.87.244.111
+  server: 192.65.217.123
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: notls.lukongtou.eu.org
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   type: vless
-  server: 34.87.244.111
+  server: 34.87.229.148
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   type: vless
-  server: 34.87.244.111
+  server: 208.103.161.5
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: ios
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   type: vless
   server: 34.87.244.111
@@ -63,7 +67,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   type: vless
   server: 34.87.244.111
@@ -90,18 +94,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
   type: vless
-  server: 152.67.101.72
-  port: 23010
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
   type: vless
   server: 34.87.244.111
@@ -113,7 +115,31 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: ios
+- name: 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,6 +154,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +170,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
 rules:
 - MATCH,PROXIES
