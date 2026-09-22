@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
+  type: vless
+  server: 103.118.254.37
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇲🇾 MY 02 - xiaohe
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -14,7 +28,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 02 - xiaohe
+- name: 🇲🇾 MY 03 - xiaohe
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -31,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - xiaohe
   - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - xiaohe
   - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 03 - xiaohe
 rules:
 - MATCH,PROXIES
