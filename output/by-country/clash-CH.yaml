@@ -4,25 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaohe
+- name: 🇨🇭 CH 01 - xiaohe
   type: vless
-  server: pl-irancell7.xelfona.ir
-  port: 2095
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaohe
+  - 🇨🇭 CH 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaohe
+  - 🇨🇭 CH 01 - xiaohe
 rules:
 - MATCH,PROXIES
