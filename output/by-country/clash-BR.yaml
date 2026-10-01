@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 UA 01 - xiaohe
+- name: 🇧🇷 BR 01 - xiaohe
   type: vless
-  server: 173.242.63.235
-  port: 8443
+  server: 43.174.192.1
+  port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
@@ -15,7 +15,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 UA 01 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 UA 01 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
 rules:
 - MATCH,PROXIES
