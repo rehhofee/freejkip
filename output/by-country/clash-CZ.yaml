@@ -6,29 +6,45 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.18.34.21
-  port: 8443
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: socks5.revil-time3.workers.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /socks5://128.140.46.169:13482
+    path: /fp
     headers:
-      Host: socks5.revil-time3.workers.dev
+      Host: ccc.010304.xyz
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 rules:
 - MATCH,PROXIES
