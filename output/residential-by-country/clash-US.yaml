@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 CY 01 - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 216.24.57.225
-  port: 2087
-  uuid: 825a76ef-053f-41eb-ba81-411e29494251
+  server: 169.128.83.4
+  port: 57259
+  uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: busstop.zandix.ir
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: busstop.zandix.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 CY 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 CY 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
