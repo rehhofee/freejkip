@@ -15,7 +15,7 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 02 - xiaohe
   type: vless
-  server: mx001.zestapp778.com
+  server: 149.104.90.21
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -24,7 +24,7 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 03 - xiaohe
   type: vless
-  server: mx001.zestapp778.com
+  server: 149.104.90.21
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,7 +33,16 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 04 - xiaohe
   type: vless
-  server: 149.104.90.21
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 05 - xiaohe
+  type: vless
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -49,6 +58,7 @@ proxy-groups:
   - 🇲🇽 MX 02 - xiaohe
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
+  - 🇲🇽 MX 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +68,6 @@ proxy-groups:
   - 🇲🇽 MX 02 - xiaohe
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
+  - 🇲🇽 MX 05 - xiaohe
 rules:
 - MATCH,PROXIES
