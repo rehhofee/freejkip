@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 IS 01 - xiaohe
+- name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 191.44.112.170
+  server: 196.245.52.188
   port: 443
-  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: orbylume.my.to
-  network: ws
-  ws-opts:
-    path: /tvpn-tor/is
-    headers:
-      Host: orbylume.my.to
+  reality-opts:
+    public-key: UTK3fM9wiII4uIcBYUYJwppN1HezxBPhxPfIxDHZqj4
+  servername: 62981et.us11.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 IS 01 - xiaohe
+  - 🇸🇨 SC 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 IS 01 - xiaohe
+  - 🇸🇨 SC 01 - xiaohe
 rules:
 - MATCH,PROXIES
