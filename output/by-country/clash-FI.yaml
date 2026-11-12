@@ -42,7 +42,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless#Farah_VPN-178
+    path: /vless
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - xiaohe
@@ -60,6 +60,15 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaohe
   type: vless
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 06 - xiaohe
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -68,10 +77,24 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /vless#Farah_VPN-178
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 06 - xiaohe
+- name: 🇫🇮 FI 07 - xiaohe
+  type: vless
+  server: 109.120.134.181
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 08 - xiaohe
   type: vless
   server: 65.109.208.183
   port: 443
@@ -80,7 +103,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 07 - xiaohe
+- name: 🇫🇮 FI 09 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -105,6 +128,8 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
+  - 🇫🇮 FI 08 - xiaohe
+  - 🇫🇮 FI 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,5 +142,7 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
+  - 🇫🇮 FI 08 - xiaohe
+  - 🇫🇮 FI 09 - xiaohe
 rules:
 - MATCH,PROXIES
