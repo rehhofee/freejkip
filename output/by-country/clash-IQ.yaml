@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - xiaohe
+  type: vless
+  server: 172.67.148.84
+  port: 443
+  uuid: 51c5a070-39ff-43fd-ac53-597bb7e7ff3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+  network: ws
+  ws-opts:
+    path: /9dffa10cc2d3b317?ed=2560
+    headers:
+      Host: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - xiaohe
+rules:
+- MATCH,PROXIES
