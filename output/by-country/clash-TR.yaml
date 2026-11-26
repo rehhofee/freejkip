@@ -13,33 +13,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: turkey-ip1.mmdaqaorg.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sinavm3.soft10.ir
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
