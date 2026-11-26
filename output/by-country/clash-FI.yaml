@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+- name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 104.18.155.229
+  server: mail3.besttotaldns.com
   port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  uuid: 18fe142e-1522-47ae-af55-bd8daf6273df
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
+  servername: mail3.besttotaldns.com
   network: ws
   ws-opts:
-    path: /au-do
+    path: /wo9a5v3jcz
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: mail3.besttotaldns.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇫🇮 FI 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇫🇮 FI 01 - xiaohe
 rules:
 - MATCH,PROXIES
