@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - xiaohe
+- name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 195.206.235.72
+  server: 188.225.56.100
   port: 443
-  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: chrome
+  servername: e2.cdnwh.icu
+  network: ws
+  ws-opts:
+    path: /stream/segment/3078a41dd7eb/
+    headers:
+      Host: e2.cdnwh.icu
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 rules:
 - MATCH,PROXIES
